@@ -1,0 +1,106 @@
+/*
+  🧠 Project 2 — Responsive Typography Card 
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Desktop default typography */
+/*
+  Style body: margin 0, font-family.
+  Center the card using .page (min-height: 100vh + flex).
+  Give .card a background-color, padding, and border-radius.
+  Set DESKTOP font sizes:
+  - .title larger (example: 44px)
+  - .desc readable (example: 18px) with line-height (example: 1.7)
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh + flex;
+}
+
+.card {
+  background-color: lightblue;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 22px;
+}
+
+.title {
+  font-size: 44px;
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* STEP 2 — Tablet typography (max-width: 768px) */
+/*
+  Add @media (max-width: 768px) { ... }
+  Inside it, reduce font sizes slightly:
+  - .title smaller (example: 34px)
+  - .desc slightly smaller (example: 16px)
+  Also reduce padding so it fits smaller screens.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+
+  .desc {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .card {
+    padding: 0.6rem;
+    margin-top: 15px;
+  }
+}
+
+/* STEP 3 — Mobile typography (max-width: 480px) */
+/*
+  Add @media (max-width: 480px) { ... }
+  Inside it:
+  - reduce .title again (example: 28px)
+  - keep line-height comfortable
+  - reduce .card padding so it doesn't feel squished
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .card {
+    padding: 0.3rem;
+    margin-top: 10px;
+  }
+}
+
+/* STEP 4 — Make spacing responsive (bonus) */
+/*
+  Adjust margins between elements at different sizes.
+  Example: smaller margin-top on mobile, bigger on desktop.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+

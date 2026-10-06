@@ -1,0 +1,164 @@
+/*
+  🧠 Project 3 — Dashboard Grid (Template Areas) 
+
+  IMPORTANT RULES:
+
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base styling (so the dashboard is readable) */
+/*
+  Style body: margin:0 and a font-family.
+  Give the page a background-color.
+  Style each section (.header, .sidebar, .main, .panel, .footer) so you can see them.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+.header,
+.sidebar,
+.main,
+.panel,
+.footer {
+  background-image: linear-gradient(180deg, orange, lightblue);
+}
+
+/* STEP 2 — Enable grid on the layout container */
+/*
+  Select .layout and set display: grid.
+  Add min-height: 100vh so the layout fills the screen.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  display: grid;
+  min-height: 100vh
+}
+
+/* STEP 3 — Define columns + rows for the dashboard */
+/*
+  Create 3 columns: sidebar, main, panel.
+  Example: 240px 1fr 320px
+  Create rows: header, content, footer.
+  Example: auto 1fr auto
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  grid-template-columns: 240px 1fr 320px;
+}
+
+/* .header {
+  grid-column: 1/4;
+
+}
+
+.footer {
+  grid-column: 1/4;
+} */
+
+/* STEP 4 — Use grid-template-areas (advanced) */
+/*
+  Add grid-template-areas on .layout.
+  Example idea:
+  "header header header"
+  "sidebar main panel"
+  "footer footer footer"
+  Then assign each element with grid-area:
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  grid-template-areas:
+  'header header header'
+  'sidebar main panel'
+  'footer footer footer'
+}
+
+
+/* STEP 5 — Assign each section to its area */
+/*
+  Set grid-area for:
+  - .header
+  - .sidebar
+  - .main
+  - .panel
+  - .footer
+  After this, your dashboard should snap into place.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
+}
+
+.panel {
+  grid-area: panel;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+/* STEP 6 — Align items (bonus polish) */
+/*
+  Try gap on .layout.
+  Try align-items / justify-items (optional).
+  This is just to polish spacing and alignment.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.layout {
+  gap: 1rem;
+  /* align-items: center; */
+  /* justify-items: center; */
+}
+
+
+
+/* STEP 7 — Responsive switch (stack on mobile) */
+/*
+  Add a media query (example: max-width: 800px).
+  Inside it: change grid-template-columns to 1fr.
+  Update grid-template-areas so it stacks vertically:
+  "header"
+  "main"
+  "panel"
+  "sidebar"
+  "footer"
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media (max-width: 800px) {
+.layout {
+  grid-template-areas:
+  'header'
+  'main'
+  'panel'
+  'sidebar'
+  'footer';
+  }
+}

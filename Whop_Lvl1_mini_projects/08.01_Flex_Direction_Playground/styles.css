@@ -1,0 +1,73 @@
+/*
+  🧠 Project 1 — Flex Direction Playground 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base styling (so you can SEE the layout) */
+/*
+  Select body and remove default margin.
+  Set a base font-family (system-ui is fine).
+  Select .page and give it max-width + centered layout.
+  Style .demo to look like a card (background, border, padding).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  max-width: 500px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STEP 2 — Turn the container into a flexbox */
+/*
+  Select .box and set display: flex.
+  Add a gap so items don't touch (example: gap: 10px).
+  Refresh and notice: items line up in a row by default.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.box {
+  display: flex;
+  gap: 10px;
+}
+
+/* STEP 3 — Control direction */
+/*
+  Add flex-direction to .box.
+  Try these one at a time (comment/uncomment):
+  - flex-direction: row;
+  - flex-direction: column;
+  - flex-direction: row-reverse;
+  - flex-direction: column-reverse;
+  Write down what changes for each one.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.box {
+  flex-direction: row-reverse;
+}
+
+/* STEP 4 — Optional: center items (preview for next project) */
+/*
+  Try justify-content and align-items on .box.
+  This is optional here, but it helps you preview the next project.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.box {
+  align-items: center;
+  justify-content: center;
+}

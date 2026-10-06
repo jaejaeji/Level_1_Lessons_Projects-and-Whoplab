@@ -1,0 +1,91 @@
+/*
+  🧠 Project 3 — Responsive Pricing Cards 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base styling + readable page layout */
+/*
+  Style body and .page (margin:0, font-family, background).
+  Give .page a max-width and center it with margin: 0 auto.
+  This is just so the layout looks clean.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: fantasy;
+}
+
+.page {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+
+/* STEP 2 — Make the pricing container a flex row */
+/*
+  Select .pricing and set display: flex.
+  Add gap so cards have spacing.
+  At this moment, cards will try to stay in one row.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+}
+
+/* STEP 3 — Turn on wrapping (THIS is the key) */
+/*
+  Add flex-wrap: wrap to .pricing.
+  Now shrink the browser width and watch cards wrap to the next line.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.pricing {
+  flex-wrap: wrap;
+}
+
+/* STEP 4 — Make cards share space nicely */
+/*
+  Select .plan and set a flexible sizing rule.
+  A common approach:
+    flex: 1;
+    min-width: 240px; (or 260px)
+  This means: cards try to share the row, but will wrap if too small.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.plan {
+  flex: 1; 
+  min-width: 260px;
+}
+
+/* STEP 5 — Alignments inside cards */
+/*
+  Inside each card, you can use flex too (optional).
+  At minimum: style the button to feel consistent.
+  Bonus: center text OR align content to top.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.plan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.plan__btn {
+  text-decoration: none;
+  display: inline-block;
+  background-color: grey;
+  border-radius: 0.5rem;
+  padding: 0% 1rem;
+}

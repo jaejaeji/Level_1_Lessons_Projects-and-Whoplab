@@ -1,0 +1,87 @@
+/*
+  🧠 Project 2 — Flex Alignment Center Lab 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base styling + visible stage area */
+/*
+  Style body and .page similar to project 1.
+  Select .stage and give it a fixed height (example: 220px).
+  Add a border or background so you can see the stage area clearly.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* STEP 2 — Make the stage a flex container */
+/*
+  Select .stage and set display: flex.
+  Add gap so chips have space.
+  By default: flex-direction is row.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.stage {
+  display: flex;
+  gap: 10px;
+}
+
+/* STEP 3 — Main axis alignment (justify-content) */
+/*
+  Add justify-content on .stage.
+  Try values one by one to SEE the difference:
+  - flex-start
+  - center
+  - flex-end
+  - space-between
+  - space-around
+  - space-evenly
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.stage {
+  justify-content: space-around;
+}
+
+/* STEP 4 — Cross axis alignment (align-items) */
+/*
+  Add align-items on .stage.
+  Try values one by one:
+  - stretch (default)
+  - flex-start
+  - center
+  - flex-end
+  Important: align-items moves items vertically (when direction is row).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.stage {
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+/* STEP 5 — Flip direction and notice axes swap */
+/*
+  Set flex-direction: column on .stage.
+  Now justify-content moves items vertically, and align-items moves items horizontally.
+  This is the KEY flexbox concept to understand.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */

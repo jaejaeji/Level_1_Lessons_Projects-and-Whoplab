@@ -1,0 +1,98 @@
+/*
+  🧠 Project 1 — Color Breakpoints 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base styles (desktop default) */
+/*
+  Start with desktop styles OUTSIDE any media query.
+  Select body:
+  - margin: 0
+  - font-family: system-ui
+  - background-color (pick a desktop color)
+  Select .page: max-width + centered + padding.
+  Select .card: background-color white + padding + rounded corners.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: antiquewhite;
+}
+
+.page {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+/* STEP 3 — Tablet media query (max-width: 768px) */
+/*
+  Write a second media query: @media (max-width: 768px) { ... }
+  Inside it:
+  - choose a tablet background-color
+  - choose a tablet card background-color
+  Important: 480 is smaller than 768, so order matters!
+  Tip: put the 768px query ABOVE the 480px query OR handle carefully.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media (max-width: 768px) {
+    body {
+    background-color: lightblue;
+  }
+
+  .card {
+    background-color: lightsalmon;
+  }
+}
+
+/* STEP 2 — Mobile media query (max-width: 480px) */
+/*
+  Write a media query: @media (max-width: 480px) { ... }
+  Inside it:
+  - change body background-color to a DIFFERENT color
+  - change .card background-color to a DIFFERENT color
+  Goal: clearly see when mobile styles are active.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+@media (max-width: 480px) {
+  body {
+    background-color: lightcoral;
+  }
+
+  .card {
+    background-color: lightcyan;
+  }
+}
+
+
+
+/* STEP 4 — Add a visible 'current mode' badge (bonus) */
+/*
+  Create a .mode badge style.
+  Then in each media query, adjust the badge color so it matches the mode.
+  This helps students 'see' breakpoints instantly.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.mode {
+  display: inline-block;
+  background-color: greenyellow;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}

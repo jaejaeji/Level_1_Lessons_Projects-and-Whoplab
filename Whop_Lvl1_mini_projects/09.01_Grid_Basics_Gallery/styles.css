@@ -1,0 +1,93 @@
+/*
+  🧠 Project 1 — Grid Basics Gallery 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Base page styling (so you can SEE everything clearly) */
+/*
+  Select body and remove margin.
+  Set font-family (system-ui is fine).
+  Set a background-color.
+  Select .page and give it max-width + centered layout.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color: bisque;
+}
+
+.page {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* STEP 2 — Make the gallery a grid */
+/*
+  Select .gallery.
+  Set display: grid.
+  Refresh: nothing changes until you define columns.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.gallery {
+  display: grid;
+}
+
+/* STEP 3 — Define columns (grid-template-columns) */
+/*
+  Still on .gallery, add grid-template-columns.
+  Try: repeat(4, 1fr)  → this makes 4 equal columns.
+  Then try: repeat(2, 1fr)  → see how it becomes 2 columns.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.gallery {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* STEP 4 — Define rows (grid-template-rows) */
+/*
+  Add grid-template-rows so rows have a consistent height.
+  Example: auto OR a fixed size like 120px.
+  Try 120px so you can clearly see rows.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.gallery {
+  grid-template-rows: repeat(4,120px);
+}
+
+/* STEP 5 — Add spacing between tiles (gap) */
+/*
+  Add gap on .gallery (example: 12px).
+  Notice: gap creates spacing between BOTH rows and columns.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.gallery {
+  gap:12px;
+}
+
+/* STEP 6 — Style the tiles (background + centering) */
+/*
+  Select .tile and give it a background-color and border-radius.
+  Center the text inside tiles (hint: use flex or grid on the tile).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.tile {
+  background-color: aqua;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
