@@ -1,0 +1,154 @@
+# Community Event Signup
+
+## What you will build
+
+Build an event info + signup page that practices structure, SEO meta tags, headings, lists, a schedule table, and a complete form with multiple input types.
+
+## What you will practice (HTML Essentials)
+
+1. **Overview of HTML**  
+   You will see how HTML is the _structure_ of a webpage.
+
+2. **HTML Structure**  
+   You will use: `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`
+
+3. **Meta Tags & SEO**  
+   You will add:
+
+   - `charset` (character set)
+   - `viewport` (mobile responsiveness)
+   - `description`, `keywords`, `author` (SEO + page info)
+
+4. **Headings, Paragraphs, Divs, and Spans**  
+   You will use:
+
+   - Headings (`<h1>`, `<h2>`, `<h3>`)
+   - Paragraphs (`<p>`)
+   - Divs (`<div>`) to group sections
+   - Spans (`<span>`) to style small parts of text
+
+5. **Working with Tables**  
+   You will use:
+
+   - `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`
+
+6. **Working with Lists**  
+   You will use:
+
+   - Unordered lists (`<ul><li>`)
+   - Ordered lists (`<ol><li>`)
+
+7. **Forms and User Input**  
+   You will use:
+   - `<form>`, `<label>`, `<input>`, `<select>`, `<textarea>`, `<button>`
+
+## How to run
+
+Open `index.html` in your browser.
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      🧠 PROJECT TITLE: Community Event Signup
+
+      ✅ WHAT YOU ARE PRACTICING (HTML Essentials)
+      - HTML Structure (doctype, html, head, body)
+      - Meta Tags & SEO (charset, viewport, description, keywords, author)
+      - Headings + Paragraphs
+      - Divs + Spans (grouping + styling hooks)
+      - Lists (ul/ol)
+      - Tables (table, thead, tbody, tr, th, td)
+      - Forms + User Input (form, label, input, select, textarea, button)
+
+      🎯 PROJECT GOAL
+      Build an event info + signup page that practices structure, SEO meta tags, headings, lists, a schedule table, and a complete form with multiple input types.
+
+    -->
+
+    <!-- STEP 1 — Add your basic meta tags -->
+    <!--
+      Inside <head>, add:
+      1) <meta charset="UTF-8">
+      2) <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      3) <title>...</title> (use a title that matches this project)
+      4) <meta name="description" content="..."> (short: 1–2 sentences)
+      5) <meta name="keywords" content="..."> (comma-separated keywords)
+      6) <meta name="author" content="...">
+    -->
+
+    <!-- STEP 2 — Link your CSS file (optional but recommended) -->
+    <!--
+      Add: <link rel="stylesheet" href="styles.css">
+      Even if the focus is HTML, a tiny bit of CSS helps you *see* your structure.
+    -->
+  </head>
+  <body>
+    <!-- STEP 3 — Create a semantic page layout -->
+    <!--
+      Create the main layout using semantic tags:
+      - <header> for the top section
+      - <main> for the main content
+      - <footer> for the bottom section
+      Tip: Wrap everything in a <div class="page"> if you want a single container.
+    -->
+
+    <!-- STEP 4 — Header (Event title + details) -->
+    <!--
+      In <header>, add:
+      - <h1> for the event name
+      - A <p> with date + location
+      - Use a <span> inside the paragraph to highlight the city or date
+    -->
+
+    <!-- STEP 5 — Main section A (Event highlights list) -->
+    <!--
+      Add a <section class="card"> with:
+      - <h2>Event Highlights</h2>
+      - A <ul> list of 5 highlights
+      - A <p class="small"> note explaining why lists are useful
+    -->
+
+    <!-- STEP 6 — Main section B (Schedule table) -->
+    <!--
+      Add another <section class="card"> with:
+      - <h2>Schedule</h2>
+      - A <table> with columns: Time / Activity / Notes
+      - Include 4 rows in the schedule
+    -->
+
+    <!-- STEP 7 — Main section C (Signup form) -->
+    <!--
+      Add another <section class="card"> with:
+      - <h3>Signup</h3>
+      - A <form> that includes:
+        1) Full name (text)
+        2) Email (email)
+        3) Ticket type (select)
+        4) Dietary preference (radio buttons)
+        5) Agree to terms (checkbox)
+        6) Message (textarea)
+        7) Submit button
+    -->
+
+    <!-- STEP 8 — Footer (Mini SEO checklist) -->
+    <!--
+      In <footer>, add an <ol> checklist with 3 SEO reminders:
+      - Title is clear
+      - Meta description exists
+      - Headings are in order
+    -->
+
+    <!-- STEP LAST — Validate your HTML -->
+    <!--
+      Quick self-check:
+      ✅ Do you have ONLY ONE <h1>?
+      ✅ Are your headings in order? (h1 → h2 → h3)
+      ✅ Does every <label> connect to an input using for="..." and id="..."?
+      ✅ Does your table have <thead> and <tbody>?
+      ✅ Did you use BOTH a list and a table somewhere?
+      ✅ Did you use a <span> to style a *small* piece of text inside a bigger element?
+    -->
+  </body>
+</html>

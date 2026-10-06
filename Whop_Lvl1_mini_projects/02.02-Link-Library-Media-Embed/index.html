@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jae">
+    <meta name="description" content="Build semantic link library and learn about anchor tags, media, and iframe embed">
+    <title>Link Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Link Library</h1>
+            <p class="small">Anchor tags and Media Links</p>
+            <a class="skip" href="#content">Skip to content</a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#embed">Embed</a></li>
+                <li><a href="#extras">Extras</a></li>
+            </ul>
+        </nav>
+
+        <main id="content">
+            <h2>Media and more</h2>
+            <section id="media">
+                <figure class="card">
+                    <img src="Redondo_beach.jpg">
+                    <figcaption>Redondo Beach, LA</figcaption>
+                </figure>
+                <audio controls>
+                    <source src="It_Aint_Me.mp3" type="audio/mpeg" />
+                </audio>
+                <video controls>
+                    <source src="LA_sunset.mp4">
+                </video>
+            </section>
+
+            <article class="card">
+                <h3>W3 Schools</h3>
+                <p>Free tutorials and references for coding</p>
+                <li><a target="_blank" and rel="noopener" href="https://www.w3schools.com/">W3 Schools</a></li>
+            </article>
+
+            <article class="card">
+                <h3>MDN Web Docs</h3>
+                <p>Community-driven resource by Mozilla for developers to look up web standards, code syntax, and browser tools</p>
+                <li><a target="_blank" and rel="noopener" href="https://developer.mozilla.org/en-US/">MDN</a></li>
+            </article>
+
+            <article class="card">
+                <h3>Codepen</h3>
+                <p>Online Web Editor</p>
+                <li><a target="_blank" and rel="noopener" href="https://codepen.io/">Codepen.io</a></li>
+            </article>
+
+            <section id="embed">
+                <iframe title="Elementary School" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5070.79104667487!2d-71.07941499372794!3d42.3649583056093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370b0924586fd%3A0xfa86c3397d26be67!2sKennedy-Longfellow%20School!5e0!3m2!1sen!2sus!4v1785346481568!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <iframe title="Park - Public Garden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11792.01090757834!2d-71.07149956011085!3d42.36378115616849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709e822b60bb%3A0xcbd77f0b5e16e701!2sPublic%20Garden!5e0!3m2!1sen!2sus!4v1785346017195!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </section>
+
+            
+
+            <section id="extras">
+                <h3>Favorite Resources</h3>
+                <li><a target="_blank" and rel="noopener" href="https://www.Google.com/">google.com</a></li>
+                <li><a target="_blank" and rel="noopener" href="https://developer.mozilla.org/en-US/">MDN</a></li>
+                <li><a target="_blank" and rel="noopener" href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a target="_blank" and rel="noopener" href="https://www.freecodecamp.org/">Freecodecamp.com</a></li>
+                <li><a target="_blank" and rel="noopener" href="https://codepen.io/">Codepen.io</a></li>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Best Practices</h3>
+            <ul>
+                <li>Always declare !DOCTYPE html to trigger standard mode in modern browsers</li>
+                <li>Use lowercase element names</li>
+                <li>Close all HTML elements</li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p>Semantic HTML provides clean, consistent code making it easier to read and understand.</p>
+        </footer>
+    </div>
+</body>
+</html>

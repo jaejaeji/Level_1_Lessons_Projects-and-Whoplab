@@ -1,0 +1,42 @@
+.items li {
+    padding: 10px;
+}
+
+li:hover {
+    background-color: aliceblue;
+}
+
+li:focus {
+    outline: auto;
+}
+
+li:first-child {
+    font-weight: bolder;
+    color: red;
+}
+
+li:last-child {
+    color:beige;
+}
+
+li:nth-child(2) {
+    background-color: burlywood;
+}
+
+li::before {
+    content: "✮🍒";
+    color: rgb(200,20,40);
+}
+
+li::After {
+    content: "✮";
+    color: rgb(200,200,20);
+}
+
+li::first-letter {
+    font-size: 33px;
+}
+
+li::first-line {
+    background-color: blueviolet;
+}

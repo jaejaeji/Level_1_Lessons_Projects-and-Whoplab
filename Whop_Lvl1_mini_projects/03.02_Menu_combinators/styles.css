@@ -1,0 +1,14 @@
+/* Descendant combinator */
+.menu a {
+    color: yellowgreen;
+}
+
+/* Child combinator */
+ul > li {
+    padding: 10px;
+}
+
+/* Adjacent sibling */
+li:first-child + li {
+    background-color: aquamarine;
+}

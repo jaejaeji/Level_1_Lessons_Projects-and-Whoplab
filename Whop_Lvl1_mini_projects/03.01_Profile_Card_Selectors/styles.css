@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+/* Element Selectors */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: rgb(62,62,122);
+}
+
+/* Class selectors */
+.card {
+    padding: 5px;
+    border: 5px;
+    width:auto;
+}
+
+.role {
+    font-style: italic;
+}
+
+.bio {
+    font-weight: bold;
+}
+
+/* ID selector */
+#name {
+    font-size: 40px;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jae">
+    <meta name="keywords" content="community, event, signup">
+    <meta name="description" content="Community Event Signup Form Webpage">
+    <title>Community Event Signup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Food Truck Event</h1>
+            <p>21 August, 2026 at <span style="color:tomato">Flushing, Queens, NY</span></p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Event Highlights</h2>
+                <ul>
+                    <li>Various Food Truck Vendors</li>
+                    <li>Live Music</li>
+                    <li>Meet People</li>
+                    <li>Fun Activities</li>
+                    <li>Chance to win prizes</li>
+                </ul>
+                <p class="small">lists help neatly show several items with simple code</p>
+            </section>
+
+            <section class="card">
+                <h2>Schedule</h2>
+                <table border="1">
+                    <thead>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Notes</th>
+                    </thead>
+                    <tbody>
+                        <td>8:00am</td>
+                        <td>Food Trucks Open</td>
+                        <td>They are here all day!</td>
+                    </tbody>
+                    <tbody>
+                        <td>12:00pm</td>
+                        <td>Live Music</td>
+                        <td>See your favorite artists!</td>
+                    </tbody>
+                    <tbody>
+                        <td>2:00pm</td>
+                        <td>Fun activities and games</td>
+                        <td>Come join with your friends and family to win prizes!</td>
+                    </tbody>
+                    <tbody>
+                        <td>9:00pm</td>
+                        <td>Food Trucks Close</td>
+                        <td>Last chance to come grab a bite.</td>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <form>
+                    <label for="name">Full name: </label>
+                    <input type="text" id="name" required>
+                    </br>
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" required>
+                    </br>
+                    <select id="ticket_type">
+                        <option value="">Please Choose</option>
+                        <option value="1_meal">1 Meal</option>
+                        <option value="2_meal">2 Meals</option>
+                        <option value="3_meal">3 Meals</option>
+                        <option value="5_meal">4 Meals</option>
+                    </select>    
+
+                    <p>Dietary preference:</p>
+                    
+                    <input type="radio" id="Gluten-free" name="dietary" value="gluten-free">
+                    <label for="gluten-free">Gluten-free</label>
+                    <br>
+                    <input type="radio" id="Dairy-free" name="dietary" value="dairy-free">
+                    <label for="dairy-free">Dairy-free</label>
+                    <br>
+                    <input type="radio" id="Vegetarian" name="dietary" value="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                    <br>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">Agree to terms</label>
+                    
+                    <textarea id="comments" name="comments" rows="4" cols="50">Enter your comments for any suggestions, ideas, or concerns.</textarea>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <ol>
+                <li>Title is Clear</li>
+                <li>Meta description exists</li>
+                <li>Headings are in order</li>
+            </ol>
+        </footer>
+    </div>
+</body>
+</html>

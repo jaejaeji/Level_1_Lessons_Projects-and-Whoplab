@@ -1,0 +1,109 @@
+/*
+  🧠 Project 1 — Color Badge Menu 
+
+  IMPORTANT RULES:
+  - After each step: SAVE → REFRESH.
+*/
+
+/* STEP 1 — Set the page background and base font */
+/*
+  Select body.
+  Remove default margin (margin: 0).
+  Set a font-family (example: system-ui).
+  Set a light background-color so the card stands out.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background-color:blanchedalmond
+}
+
+/* STEP 2 — Center the card */
+/*
+  Select .page.
+  Use min-height: 100vh and flex to center the card.
+  Tip: display:flex; align-items:center; justify-content:center;
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STEP 3 — Card background + spacing */
+/*
+  Select .card.
+  Give it a white background-color.
+  Add padding, border-radius, and a subtle border.
+  This teaches changing background colors on containers.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+
+}
+
+/* STEP 4 — Text colors for hierarchy */
+/*
+  Select .title and make it darker (color).
+  Select .subtitle and make it softer/lighter (color with opacity OR a gray).
+  This teaches text colors for hierarchy.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.title {
+  color: black;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: rgba(33, 33, 33, 0.5);
+  font-weight: normal;
+}
+
+/* STEP 5 — Badge colors (meaning) */
+/*
+  All badges share: padding, border-radius, font-size, font-weight.
+  Then each badge gets different background-color + text color:
+  - .badge--good = green vibe
+  - .badge--warn = orange/yellow vibe
+  - .badge--bad  = red vibe
+  Make sure the text is readable (contrast).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.badge {
+  padding: 0% 0.5rem;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.badge--good {
+  background-color: green;
+  color:aliceblue;
+}
+
+.badge--warn {
+  background-color: orangered;
+  color: yellow;
+}
+
+.badge--bad {
+  background-color: red;
+  background-color: aliceblue;
+}

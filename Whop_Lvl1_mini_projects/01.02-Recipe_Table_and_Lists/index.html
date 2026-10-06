@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jae">
+    <meta name="keywords" content="Recipe, planner, table, lists">
+    <meta name="description" content="Recipe/meal planning page with headings, lists, ingredients table, and a small form for shopping notes.">
+    <title>Recipe Planner: Table and Lists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Recipe Planner</h1>
+            <p><span style="color:brown">Recipe planner</span> to store your recipes and ingredients</p>
+        </header>
+            
+        <main>
+            <section class="card">
+                <h2>Today's Plan</h2>
+                <ul>
+                    <li>Tacos</li>
+                        <ol>
+                            <li>briefly toast tortillas</li>
+                            <li>cook beef marinated with oyster sauce</li>
+                            <li>cut down onions and tomatos and mix with lime juice</li>
+                            <li>put ingredients on tortiallas and add sour cream and avocados</li>
+                        </ol>
+                    <li>Kimchi Jjigae</li>
+                        <ol>
+                            <li>boil water with anchovies</li>
+                            <li>take out anchovies after 5min</li>
+                            <li>add kimchi, pork, tofu, scallions, cut onions, minced garlic, potato, soy sauce</li>
+                            <li>serve and enjoy with rice</li>
+                        </ol>
+                    <li>Fried Rice</li>
+                        <ol>
+                            <li>cook beef/pork/shrimp with soy sauce and oyster sauce</li>
+                            <li>add onions, garlic, scallions and fry</li>
+                            <li>add rice from freezer and fry with sesame oil, soy sauce, oyster sauce</li>
+                            <li>serve and enjoy</li>
+                        </ol>
+                </ul>
+            </section>
+
+            <section class="card">
+                <table border="1">
+                    <thead>
+                        <th>Ingredient</th>
+                        <th>Amount</th>
+                        <th>Notes</th>
+                    </thead>
+                    <tbody>
+                        <td>tortillas</td>
+                        <td>4</td>
+                        <td>careful not to burn</td>
+                    </tbody>
+                    <tbody>
+                        <td>onions</td>
+                        <td>3</td>
+                        <td>better not rub your eyes when cutting</td>
+                    </tbody>
+                    <tbody>
+                        <td>pork</td>
+                        <td>500g</td>
+                        <td>cut off the fat or get your arteries clogged</td>
+                    </tbody>
+                    <tbody>
+                        <td>rice</td>
+                        <td>600kg</td>
+                        <td>for two people</td>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="card">
+                <h3>Shopping Note</h3>
+                <form>
+                    <label for="item">Item:</label>
+                    <input type="text" id="item" required />
+                    <br />
+                    <label for="Quantity">Quantity: </label>
+                    <input type="number" id="quantity" required />
+                    <br />
+                    <br />
+                    <select id="Category">
+                        <option value="">Please Choose</option>
+                        <option value="produce">Produce</option>
+                        <option value="produce">Dairy</option>
+                        <option value="produce">Protein</option>
+                        <option value="produce">Other</option>
+                    </select>
+                    <textarea id="notes" name="notes" rows="4" cols="50">Extra notes.</textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p class="small">&copy; Created by Jae</p>
+        </footer>
+    </div>
+</body>
+</html>

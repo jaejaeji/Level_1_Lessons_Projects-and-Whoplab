@@ -1,0 +1,117 @@
+/*
+  🧠 PROJECT: Brand Kit — Importing Google Fonts + Applying Typography System
+
+  ✅ TYPOGRAPHY TOPICS PRACTICED
+  - font-family
+  - font-size
+  - font-weight
+  - font-style
+  - text-align
+  - line-height
+  - letter-spacing / word-spacing
+  - text-transform
+  - text-decoration
+  - importing Google Fonts (project 3)
+
+  IMPORTANT (MENTEE RULES)
+  - This file should contain ONLY instructional comments.
+  - You write the CSS under each step.
+  - After each step: SAVE → REFRESH.
+
+  🎯 GOAL: Import Google Fonts and apply a consistent typography system across a landing section.
+*/
+
+/* STEP 1 — Import Google Fonts */
+/*
+  Pick TWO fonts from Google Fonts:
+    - One display font for headings (example: 'Poppins' or 'Playfair Display')
+    - One readable font for body (example: 'Inter' or 'Roboto')
+  
+  Choose one import method:
+  A) Add <link> tags in the HTML head (above).
+  B) Use @import at the TOP of this CSS file.
+  
+  After importing, test by setting font-family and seeing the font actually change.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+/* headings font */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* body font */
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* header {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;  
+} */
+
+/* STEP 2 — Base typography system */
+/*
+  Select body and set:
+    - font-family to your BODY font (with fallbacks like sans-serif).
+    - base font-size (16px).
+    - background color.
+  Select .page and set max-width + padding.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+
+
+body {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 16px;
+  background-color: #8c5f5f; 
+}
+
+/* STEP 3 — Headings use the DISPLAY font */
+/*
+  Select .hero__title and set font-family to your DISPLAY font.
+  Set font-size big (example: 2.6rem) and font-weight (example: 700).
+  Adjust line-height so the big title looks tight (example: 1.1).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* STEP 4 — Brand label styling */
+/*
+  Select .brand and make it look like a logo label:
+    - font-weight bold
+    - letter-spacing
+    - text-transform: uppercase
+  This teaches 'brand voice' with typography.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.brand {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* STEP 5 — Button typography + decoration */
+/*
+  Select .hero__btn and style it like a button.
+  Remove text-decoration: none.
+  Set font-weight and letter-spacing slightly (optional).
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.hero__btn {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}

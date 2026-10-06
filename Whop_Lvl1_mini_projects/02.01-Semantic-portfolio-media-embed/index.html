@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Portfolio + Media + Embed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Semantic Portfolio</h1>
+            <p class="small">Media + Embed</p>
+            <a class="skip" href="#content">Skip to content</a>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#content">Content</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#embed">Embed</a></li>
+                <li><a href="#extras">Extras</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="media">
+                <h2>Media</h2>
+                <p>Media content</p>
+                <figure class="card">
+                    <img src="Redondo_beach.jpg">
+                    <figcaption>Redondo Beach, LA</figcaption>
+                </figure>
+
+                <audio controls>
+                    <source src="It_Aint_Me.mp3" type="audio/mpeg"/>
+                </audio>
+
+                <video controls>
+                    <source src="LA_sunset.mp4">
+                </video>
+            </section>
+            
+            <section id="embed">
+                <h2>Embed</h2>
+                <p>Embed content</p>
+                <iframe width="458" height="815" src="https://www.youtube.com/embed/BxQxiah-9kY" title="Los Angeles sunset  with beach #losangeles #california #usa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="extras">
+                <h2>Extras</h2>
+                <article class="card">
+                    <h3>Puzzle images</h3>
+                    <p>Several images put together as one</p>
+                <figure class="flex1">
+                    <img src="The_Last_Book_store_r1_c1.jpg">
+                    <img src="The_Last_Book_store_r1_c2.jpg">
+                </figure>
+                <figure class="flex2">
+                    <img src="The_Last_Book_store_r2_c1.jpg">
+                    <img src="The_Last_Book_store_r2_c2.jpg">
+                </figure>
+                </article>
+            </section>
+        </main>
+
+        <aside>
+            <h2>Quick Tips</h2>
+            <ul>
+                <li>Use web tags to match their described meaning</li>
+                <li>Descend through heading hierarchy h1, h2, h3, etc in order</li>
+                <li>Group content logically</li>
+            </ul>
+            <a href="https://developer.mozilla.org/en-US/">MDN Link</a>
+        </aside>
+        
+        <footer>
+            <p class="small">&copy; Created by Jae</p>
+            <a href="https://www.google.com/" target="_blank" rel="noopener">Google.com</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+/*
+  🧠 PROJECT: Readability Lab — Alignment/Line-Height/Spacing/Transform/Decoration
+
+  ✅ TYPOGRAPHY TOPICS PRACTICED
+  - font-family
+  - font-size
+  - font-weight
+  - font-style
+  - text-align
+  - line-height
+  - letter-spacing / word-spacing
+  - text-transform
+  - text-decoration
+  - importing Google Fonts (project 3)
+
+  IMPORTANT 
+  - After each step: SAVE → REFRESH.
+
+  🎯 GOAL: Practice making text readable and styled using alignment, spacing, transformations, and decoration.
+*/
+
+/* STEP 1 — Base typography + page width */
+/*
+  Select body and remove default margin.
+  Set a base font-family and a comfortable base font-size (example: 16px).
+  Select .page and set max-width + center it with margin: 0 auto.
+  Add padding so text isn't touching the edges.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* STEP 2 — Text alignment */
+/*
+  Select .article and set text-align: left (or try justify just to compare).
+  Try changing text-align to center to SEE why articles usually aren't centered.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.article {
+  text-align: left;
+  
+}
+
+/* STEP 3 — Line height (MOST IMPORTANT) */
+/*
+  Select .para and set line-height (example: 1.6 to 1.8).
+  Observe: higher line-height usually makes paragraphs easier to read.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.para {
+  line-height: 1.8;
+}
+
+/* STEP 4 — Spacing (letter + word spacing) */
+/*
+  Select .kicker and add letter-spacing (example: 0.06em).
+  Select .para and add word-spacing (example: 0.02em).
+  Keep it subtle—too much spacing feels weird.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.kicker {
+  letter-spacing: 0.06em;
+}
+
+.para {
+  word-spacing: 0.02em;
+}
+
+/* STEP 5 — Transform + decoration */
+/*
+  Select .meta and set text-transform: uppercase to make it look like metadata.
+  Select .author and set text-decoration: underline (or remove underline and add a border-bottom).
+  Select .note and try text-transform: uppercase OR capitalize.
+*/
+
+/* ✅ WRITE YOUR CSS UNDER THIS LINE */
+
+.meta {
+  text-transform: uppercase;
+}
+
+.author {
+  text-decoration: underline;
+}
+
+.note {
+  text-transform: capitalize;
+}
