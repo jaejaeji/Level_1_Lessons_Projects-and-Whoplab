@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <!-- selects all <p> elements that are descendants of a <div> element -->
+    <style>
+        
+        div p {
+            color: skyblue;
+        }
+        
+        h2 ~ p {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>this is inside a div</p>
+        <p>this is inside a div</p>
+    </div>
+    <p>this is not colored green</p>
+
+    <div>
+        <p>Direct Child</p>
+        <section>
+            <p>Not a Direct Child</p>
+        </section>
+    </div>
+
+    <h2>first paragraph.</h2>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+</body>
+</html>

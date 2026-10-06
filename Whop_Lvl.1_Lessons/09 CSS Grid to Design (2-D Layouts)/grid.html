@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            background-color: lightgrey;
+            padding: 10px;
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-rows: 100px 100px; */
+            grid-template-columns: 1fr 2fr 1fr;
+            /* fr: flexible fraction (1fr 1fr 2fr = 25% 25% 50%) */
+            gap: 20px;
+            /* justify-items: center; */
+            /* justify-items(horizontal): left, center, right */
+            /* align-items: end; */
+            /* align-items(vertical): start, center, end */
+            place-items: start;
+            /* place-items(combines horizontal and vertical): start, end, left, right, center */
+        }
+
+        /* items stack vertically by default */
+        .item {
+            background: steelblue;
+            color: white;
+            padding: 20px;
+            margin: 5px;
+            width: 100px;
+        }
+
+        .item:nth-child(1) {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    div emmet abbreviation:
+    "div.grid-container>div.item*3"
+    -->
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>    
+</body>
+</html>
