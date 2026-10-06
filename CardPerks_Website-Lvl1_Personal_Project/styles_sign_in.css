@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+:root {
+    --primary-color: #C4D7F2;
+    --secondary-color: #AFDEDC;
+    --accent-color: #EDDD53;
+    --background-light: #F0F7EE;
+    --background-dark: #053BA8;
+    --text-color: #4A6DE1;
+    --text-color2: #053BA8;
+    --white: #fff;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anta", sans-serif;
+    /* background-color: var(--secondary-color); */
+}
+
+/* header */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    min-width: auto;
+
+}
+
+.title {
+    display: flex;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 20px;
+}
+
+
+.header,
+.inside_container,
+.login,
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+    padding: 1rem;
+}
+
+.email,
+.password {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0px;
+}
+
+.google_login,
+.help,
+.signup,
+.signin {
+    text-decoration: none;
+}
+
+.google_login {
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    width: 50%;
+}
+
+.google_login img {
+    width: 100%;
+}
+
+.login_box {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(136, 124, 206, 0.5);
+}
+
+button {
+    display: inline-block;
+    font-size: 18px;
+    width: 30%;
+    margin: 20px auto;
+    background-color: white;
+    color: var(--background-dark);
+    cursor: pointer;
+}
+
+.login_section1 {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.login_section1 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.login_section1 label {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15px;
+}
+
+.login_section1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    box-sizing: border-box;
+}
+
+.login_section2 {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login_subsection1 {
+    margin-bottom: 20px;
+}
+
+.login_subsection2 {
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 480px) {
+    .login_box {
+        width: 90%;
+        padding: 15px;
+        margin: 30px auto;
+        font-size: 15px;
+    }
+}
